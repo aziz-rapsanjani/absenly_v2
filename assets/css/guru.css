@@ -1,0 +1,63 @@
+:root {
+    --primary-blue: #2563EB;
+    --bg-layar: #F8FAFC;
+    --teks-utama: #0F172A;
+    --teks-sekunder: #64748B;
+}
+body {
+    background-color: var(--bg-layar);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--teks-utama);
+}
+.sidebar {
+    width: 280px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-link-custom {
+    color: var(--teks-sekunder);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.nav-link-custom:hover {
+    background-color: #f1f5f9;
+    color: var(--teks-utama);
+}
+.nav-link-custom.active {
+    background-color: #EFF6FF;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+.main-content {
+    margin-left: 280px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.table-custom thead th {
+    background-color: #f8fafc;
+    color: var(--teks-sekunder);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px;
+}
+.table-custom tbody td {
+    vertical-align: middle;
+    padding: 16px;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #f1f5f9;
+}
